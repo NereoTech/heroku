@@ -41,8 +41,8 @@
      - name: Set up Heroku
      uses: akhileshns/heroku-deploy@v3.13.15 # This is a popular GitHub Action for deploying to Heroku
      with:
-         heroku_api_key: ${{ 366449bb-303a-44d5-a807-66ba81570a16 }}
+         heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
          heroku_app_name: ${{ murmuring-hollows-88100 }} # Replace with your Heroku app name
-         heroku_email: ${{ mathieu.fournier@estiam.com }} # Your Heroku account email
+         heroku_email: ${{ secrets.HEROKU_EMAIL }} # Your Heroku account email
          # Optional: Add this if your project is not at the repo root
          # appdir: "your-app-directory"
