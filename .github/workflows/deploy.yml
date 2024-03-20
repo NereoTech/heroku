@@ -1,13 +1,13 @@
 name: Python application CI
 
- on:
+on:
    push:
      branches: [ "main" ]
 
- permissions:
+permissions:
    contents: read
 
- jobs:
+jobs:
    build:
 
      runs-on: ubuntu-latest
